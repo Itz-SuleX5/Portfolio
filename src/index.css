@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white font-['Press_Start_2P'] cursor-default;
+    image-rendering: pixelated;
+  }
+}
+
+@layer components {
+  .pixel-border {
+    box-shadow: 
+      0 0 0 2px #fff,
+      0 0 0 4px #000;
+    image-rendering: pixelated;
+  }
+  
+  .pixel-button {
+    @apply relative px-6 py-3 bg-cyan-500 text-white transition-all duration-150
+    hover:bg-cyan-600 active:translate-y-1 pixel-border whitespace-nowrap;
+  }
+
+  .typewriter {
+    @apply inline-block overflow-hidden border-r-2 border-white;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff }
+  }
+
+  .pixel-art {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+}
