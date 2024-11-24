@@ -3,7 +3,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Terminal,
   Code,
   Database,
   Server,
