@@ -6,12 +6,13 @@ interface ObstacleProps {
   gameOver?: boolean;
 }
 
-const OBSTACLES = ['🌵', '🌵🌵', '🪨', '🌲'] as const;
+type ObstacleType = '🌵' | '🌵🌵' | '🪨' | '🌲';
+const OBSTACLES: ObstacleType[] = ['🌵', '🌵🌵', '🪨', '🌲'];
 const SPEEDS = [1.5, 2, 2.5] as const;
 
 export const Obstacle = React.forwardRef<HTMLDivElement, ObstacleProps>(
   ({ speed = 2, gameOver = false }, ref) => {
-    const [currentObstacle, setCurrentObstacle] = useState(OBSTACLES[0]);
+    const [currentObstacle, setCurrentObstacle] = useState<ObstacleType>('🌵');
     const [currentSpeed, setCurrentSpeed] = useState(speed);
 
     // Función para generar un nuevo obstáculo aleatorio
