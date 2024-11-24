@@ -81,23 +81,21 @@ function App() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'YouTube Video Downloader',
       description:
-        'Full-stack e-commerce solution with Django REST Framework and React',
-      tech: ['Django', 'React', 'PostgreSQL', 'Redis'],
-      image:
-        'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
-      github: '#',
-      demo: '#',
+        'A modern web application that allows users to download YouTube videos in various formats and qualities. Built with React for the frontend and Django for the backend, featuring a clean UI and efficient video processing.',
+      tech: ['React', 'Django', 'Python', 'REST API'],
+      image: 'https://api.microlink.io/?url=https://youtubedownloader-frontend.onrender.com&screenshot=true&meta=false&embed=screenshot.url',
+      github: 'https://github.com/Itz-SuleX5/YouTubeDownloader',
+      demo: 'https://youtubedownloader-frontend.onrender.com/',
     },
     {
-      title: 'Real-time Chat App',
-      description: 'WebSocket-based chat application with Django Channels',
-      tech: ['Django', 'Channels', 'React', 'WebSocket'],
-      image:
-        'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&q=80',
-      github: '#',
-      demo: '#',
+      title: 'Dot Dager Portfolio Contest',
+      description: 'A portfolio website created for YouTuber Dot Dager\'s portfolio contest. The challenge was to create the best portfolio website showcasing Dot Dager\'s content and achievements. Built with React and styled with Tailwind CSS, featuring smooth animations and responsive design.',
+      tech: ['React', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
+      image: 'https://api.microlink.io/?url=https://resplendent-granita-f96f1d.netlify.app&screenshot=true&meta=false&embed=screenshot.url',
+      github: 'https://github.com/Itz-SuleX5/dot-dager-portfolio',
+      demo: 'https://resplendent-granita-f96f1d.netlify.app/',
     },
   ];
 
