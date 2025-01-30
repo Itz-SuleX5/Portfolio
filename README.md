@@ -1,5 +1,3 @@
-Here is the draft for your README in English:
-
 # Portfolio
 
 This is my personal portfolio, showcasing my skills, projects, and experience.
